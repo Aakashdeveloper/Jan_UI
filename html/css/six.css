@@ -1,0 +1,34 @@
+.iframe{
+   display:flex;
+   justify-content: center;
+}
+.heading{
+    text-align: center
+}
+iframe{
+    margin-left:1%
+}
+
+.sameline{
+    height: 300px;
+    width:300px;
+    background:teal;
+    float: left;
+    border: 10px groove rgb(114, 210, 76);
+    box-shadow: 10px 10px #000000;
+    margin-left: 2%;
+    overflow: scroll;
+    overflow-y: scroll;
+}
+
+.steelblue{
+    background: steelblue
+}
+
+.heading{
+    float: left;
+    margin-left: 5%
+}
+h2, p{
+    text-align: center;
+}
