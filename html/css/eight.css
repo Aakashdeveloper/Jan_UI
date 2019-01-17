@@ -1,0 +1,47 @@
+.colorsType{
+   /* background-image:linear-gradient(to left,green,blue,gray,red)*/
+    background-image:repeating-radial-gradient(green,blue 10%,gray 15%)
+}
+.mainDiv{
+    height: 200px;
+    width:200px;
+    background-color: aqua;
+    border-radius:50%;
+    transform: rotate(0deg);
+    cursor: pointer;
+    
+}
+
+.mainDiv:hover{
+    background-color: goldenrod;
+    transform: rotate(20deg)
+}
+
+/*
+transform: translate(50px, 50px)
+ transform: scale(2,2)
+ transform: skew(20deg,20deg)
+*/
+
+h1{
+    color:wheat;
+    text-shadow: 2px 2px magenta
+}
+
+.toolTipText{
+    color:white;
+    visibility: hidden;
+}
+
+h1:hover .toolTipText{
+    visibility: visible;
+    color:white;
+}
+
+ul>li{
+
+}
+
+h1 p{
+    
+}
