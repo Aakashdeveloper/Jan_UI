@@ -45,3 +45,7 @@ ul>li{
 h1 p{
     
 }
+
+.col-md-6 {
+    color:green !important;
+}
