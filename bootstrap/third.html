@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Employee Form
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="row">
+                                <div class="form-group col-md-6">
+                                        <label for="name">FirstName</label>
+                                           <input type="text" class="form-control"
+                                           id="name"/>
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                           <label for="lname">LastName</label>
+                                              <input type="text" class="form-control"
+                                              id="lname"/>
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                        <label for="lname1">LastName</label>
+                                           <input type="text" class="form-control"
+                                           id="lname1"/>
+                                </div>
+                               
+                        </div>
+                        <span class="badge">Test</span>
+                        <span class="badge">Test</span>
+                        <span class="badge">Test</span>
+                        <br/><br/>
+                        <span class="label label-primary">
+                            Javascript
+                        </span>
+                        <span class="label label-success">
+                                React Js
+                        </span>
+                        <div class="checkbox">
+                                <label><input type="checkbox"/>FUll Time</label>
+                        </div>
+                        <div class="radio">
+                                <label><input type="radio"/>FUll Time</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                       
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#booking1">
+                Open Modal 1
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#booking2">
+                Open Modal 2
+            </button>
+            <div id="booking1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Model 1 Heading</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.ibb.co/vdvVmkm/logo.png"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="booking2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Model 2 Heading</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://i.ibb.co/vdvVmkm/logo.png"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button tyqpe="button" class="btn btn-info" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="10" style="width:70%">
+                    <span> 50% done</span>
+                </div>
+            </div>
+            <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:70%">
+                        <span> 50% done</span>
+                    </div>
+            </div>
+            <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:70%">
+                        <span> 50% done</span>
+                    </div>
+            </div>
+            <div class="progress">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:70%">
+                        <span> 50% done</span>
+                    </div>
+            </div>
+            <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:70%">
+                        <span> 50% done</span>
+                    </div>
+            </div>
+            <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:30%">
+                        <span> 30% done</span>
+                    </div>
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:25%">
+                        <span> 25% done</span>
+                    </div>
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="5"
+                        aria-valuemin="0" aria-valuemax="10" style="width:40%">
+                        <span> 40% done</span>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
