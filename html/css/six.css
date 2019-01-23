@@ -27,7 +27,7 @@ iframe{
 
 .heading{
     float: left;
-    margin-left: 5%
+    margin-left: 5% !important;
 }
 h2, p{
     text-align: center;
