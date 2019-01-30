@@ -5,6 +5,7 @@ for(i=5; i<10; i++){
 }
 
 var city = ["london", "newyork", "davos", "mumbai", "delhi"]
+var rendom = ["1wt", 1.2 , 45]
 for(i=0;i<city.lenght;i++){
     console.log(city[i])
 }
@@ -52,4 +53,20 @@ clouser
 var y  = 111
 function check(a){
     return y
+}
+
+function add(a,b){
+    return a+b
+}
+
+const add = (a,b) => { 
+    return a+b 
+}
+
+var a = 20
+if(a>10){
+    let cd = 1;
+    console.log(a+cd)
+}else{
+    console.log(a-cd)
 }
