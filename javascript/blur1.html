@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>blur2</title>
+        <style>
+            p{
+                color:red;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            function validatePassword(){
+                var pass = document.getElementsByClassName('pwd')[0].value;
+                var outval;
+                if(pass.length<1){
+                    outval="please enter password"
+                }else{
+                    if(pass.length<8){
+                        outval = "min length is 8"
+                    }else{
+                        outval=""
+                    }
+                }
+                
+                // document.getElementById('error').innerText=outval;
+                document.getElementsByTagName('p')[0].innerText = outval;
+            }
+
+            function checkemail(){
+                var email = document.getElementById('email').value;
+                var cemail = document.getElementById('cemail').value;
+                var outerr;
+                if(email === cemail){
+                    outerr = ""
+                }else{
+                    outerr =" email not match"
+                }
+                document.getElementById('error1').innerText = outerr;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Password</label>
+        <input type="password" class="pwd" onblur="validatePassword()"/>
+        <p id="error"></p>
+        <label>Email</label>
+        <input type="email" id="email"/>
+        <label>Confirm Email</label>
+        <input type="email" id="cemail" onblur="checkemail()"/>
+        <p id="error1">
+            
+        </p>
+    </body>
+</html>

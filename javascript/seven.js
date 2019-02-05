@@ -128,3 +128,14 @@ parseInt(c)+b
 21
 parseFloat(c)+b
 21.354
+
+[
+    {
+        nn: 'a',
+        cl: 'ui'
+    },
+    {
+        nn: 'b',
+        cl: 'ai'
+    }
+]

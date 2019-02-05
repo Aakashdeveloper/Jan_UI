@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>On Click</title>
+    </head>
+    <body>
+        <form>
+                <label>Email</label>
+                <input type="text" id="email" name="email"/>
+                <br/><br/>
+                <label>Password</label>
+                <input type="text" id="pwd" name="pwd">
+                <br/>
+                <button type="submit" onclick="validate()">Submit</button>
+                <button type="reset">Reset</button>
+        </form>
+        <script>
+            function validate(){
+                var em = document.getElementById('email').value;
+                var pwd = document.getElementById('pwd').value;
+                 if(em == "a@a.com" && pwd == 1234){
+                    alert("em is "+em+" pwd is "+ typeof(pwd))
+                     window.location.href ="http://aakashhanda.me"
+                 }else {
+                     alert("wrong email or password");
+                 }
+            }
+        </script>
+        
+    </body>
+</html>

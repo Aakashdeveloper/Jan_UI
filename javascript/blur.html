@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Blur Event</title>
+    </head>
+    <body>
+        <label>FirstName</label>
+        <input type="text" onblur="showValue()" id="fname"/>
+
+        <script>
+            const showValue = () => {
+                var inputval = document.getElementById('fname').value
+                inputval = inputval.toUpperCase();
+                document.getElementById('fname').value = inputval
+            }
+        </script>
+    </body>
+</html>
