@@ -41,18 +41,31 @@ out.name
 out[0].name
 
 
-let john = {    
+let john = [
+    {    
     firstName:'John',
     lastname:'Andy', 
     city:'NewYork',
     job:'Software'
+},{
+    movie:'John',
+    lastname:'Andy', 
+    city:'NewYork',
+    job:'Software'
 }
+]
 undefined
 Object.keys(john)
 (4) ["firstName", "lastname", "city", "job"]
 Object.keys(john)[0]
 "firstName"
-var key = Object.keys(john)[0]
+var key = Object.keys(john)[0][0]
 undefined
 john[key]
 "John"
+
+
+let andy = {
+    firstName:'',
+    lastname:''
+}
