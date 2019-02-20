@@ -1,0 +1,13 @@
+npm init
+npm install express
+
+node app.js
+
+
+babel
+
+@babel/core
+@babel/preset-env
+@babel/register
+babel-core
+babel-polyfill
