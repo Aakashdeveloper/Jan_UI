@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+        #mainDiv {
+            height: 300px;
+            width:300px;
+            background-color:red;
+        }
+
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#change').click(function(){
+                    $('#one').css('color','red')
+                })
+                $('#hide').click(function(){
+                    $('#mainDiv').hide(2000)
+                })
+                $('#show').click(function(){
+                    $('#mainDiv').show(5000)
+                })
+                $('#toggle').click(function(){
+                    $('#mainDiv').toggle(5000)
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div id="one">This is for jquery</div>
+        <button id="hide">Hide Me</button>
+        <button id="show">Show Me</button>
+        <button id="toggle">Toggle</button>
+        <button id="change">Click Me</button>
+
+        <section id="mainDiv">
+
+        </section>
+    </body>
+</html>
+
+<!--style="width:200px;height:200px;background-color:green"-->
