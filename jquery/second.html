@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            .hidden{
+                display: none;
+            }
+        </style>
+        <script>
+            function showPage(){
+                $('.main').removeClass('hidden')
+            }
+            function addTask(){
+                $('.js-list').text('First task')
+            }
+            function backToBasic(){
+                $('.main').addClass('hidden')
+            }
+            $(document).ready(()=>{
+                $('#addTask').click(()=>{
+                    $("ul").prepend("<li>Task</li>")
+                })
+                $('#add1').click(()=>{
+                    $("p").prepend("<input type='text'/><br/>")
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="main hidden">
+                <h1 class="js-hide-it">Hello To parents</h1>
+                <p class="js-para">Welcome</p>
+                <ul>
+                    <li class="js-list"></li>
+                </ul>
+        </div>
+        
+        <input type="submit"  onclick="showPage()">
+        <button id="addTask">Add New Task</button>
+        <button id="add1">Add Field</button>
+        <input type="reset" onclick="backToBasic()">
+    </body>
+</html>
+
+
+<!--<input type="button" value="addTask"  onclick="addTask()">-->

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Slider</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <style>
+            #change{
+                height: 200px;
+                width: 200px;
+                background: green;
+            }
+        </style>
+        <script>
+            var a = 0
+            var b =0;
+            function loop(){
+            var i = 0;
+            
+            var out = setInterval(valOut,1000)
+            console.log("out>>>>>"+b)
+
+                function valOut(){
+                    if(b>80){
+                        clearInterval(out)
+                    }else{
+                        a=a+20
+                        b = parseInt(i)+ parseInt(a)
+                        console.log("AAAA>>>"+a)
+                        console.log("IIII>>>"+i)
+                        console.log(b)
+                        if(b==0 || b== "undefined"){
+                            document.getElementsByClassName("progress-bar").style.width = "0%";
+                            document.getElementsByClassName("progress-bar").style.width = "10%";
+                        }
+                        else if(b==20){
+                            document.getElementById("testing").style.width = "20%";
+                            document.getElementById("testing1").style.width = "30%";
+                        }else if(b==40){
+                            document.getElementById("testing").style.width = "40%";
+                            document.getElementById("testing1").style.width = "60%";
+                        }else if(b==80){
+                            document.getElementById("testing").style.width = "80%";
+                            document.getElementById("testing1").style.width = "90%";
+                        }else if(b==100){
+                            document.getElementById("testing").style.width = "100%";
+                            document.getElementById("testing1").style.width = "100%";
+                            document.getElementById("mainHead").innerHTML="Page loaded succesfully"
+                        }
+                    }
+                }
+
+            }
+            window.onload=loop();
+        </script>
+
+    </head>
+    <body>
+            <div class="container">
+                    <div class="progress">
+                      <div  id="testing" class="progress-bar progress-bar-striped progress-bar-animated  bg-success" style="width:0%"></div>
+                    </div>
+            </div>
+            <div class="container">
+                    <div class="progress">
+                      <div  id="testing1" class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:0%"></div>
+                    </div>
+            </div>
+            <h1 id="mainHead"></h1>
+    </body>
+</html>
