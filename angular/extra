@@ -1,0 +1,7 @@
+npm install -g @angular/cli
+cd angular
+ng new firstapp
+cd firstapp
+npm start
+
+http://localhost:4200
